@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Digital Marketer Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 0 0% 99%;
+    --foreground: 220 15% 20%;
+
+    /* Card with glassmorphism */
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    /* Primary - Soft Blue */
+    --primary: 210 70% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 70% 85%;
+    --primary-dark: 210 70% 45%;
+
+    /* Secondary - Light Gray */
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 220 15% 20%;
+
+    /* Muted */
+    --muted: 220 10% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Accent - Vibrant Yellow */
+    --accent: 45 100% 70%;
+    --accent-foreground: 220 15% 20%;
+    --accent-light: 45 100% 85%;
+
+    /* Destructive */
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border & Input */
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 210 70% 58%;
+
+    /* Border Radius */
+    --radius: 1rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 70% 58%), hsl(210 70% 70%));
+    --gradient-accent: linear-gradient(135deg, hsl(45 100% 70%), hsl(45 100% 80%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 70% 58% / 0.05), hsl(45 100% 70% / 0.05));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(210 70% 58% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(210 70% 58% / 0.12);
+    --shadow-large: 0 20px 60px hsl(210 70% 58% / 0.15);
+    --shadow-glow: 0 0 40px hsl(45 100% 70% / 0.3);
+
+    /* Glassmorphism */
+    --glass-bg: hsl(0 0% 100% / 0.7);
+    --glass-border: hsl(0 0% 100% / 0.2);
+    --glass-shadow: 0 8px 32px hsl(210 70% 58% / 0.1);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+
+  /* Glass Card Effect */
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+  }
+
+  /* Smooth Animations */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

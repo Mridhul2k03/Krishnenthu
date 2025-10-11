@@ -11,26 +11,41 @@ const Experience = () => {
         "Implemented data-driven SEO strategy resulting in 250% organic traffic growth",
         "Managed $2M+ annual ad budget across multiple channels",
       ],
+      src:"https://exmedia.in/images/LOGO%20Svg.svg",
+
     },
     {
-      role: "Digital Marketing Trainer",
-      company: "Growth Partners Inc.",
+      role: "Digital Marketing executive & Trainer",
+      company: "WAHY LAB SOLUTIONS",
       period: "2024 - 2025",
       achievements: [
         "Trained 50+ marketers on digital marketing best practices",
         "Developed curriculum for marketing training programs",
         "Provided mentorship and guidance to new hires",
       ],
+      src:"https://www.wahylab.com/site/images/logo/logo1.png",
+    },
+    {
+      role: "Digital Marketing executive",
+      company: "Al RAZ INTERNATIONAL BUSINESS AND JOB CONSULTANCY",
+      period: "2024 - 2024",
+      achievements: [
+        "Managed a team of marketers to achieve 180% increase in qualified leads",
+        "Implemented data-driven SEO strategy resulting in 250% organic traffic growth",
+        "Managed $2M+ annual ad budget across multiple channels",
+      ],
+      src:"https://alraz.in/wp-content/uploads/2023/06/New-Project-10.png",
     },
     {
       role: "Digital Marketing Intern",
-      company: "StartupHub",
-      period: "2024 - 2024",
+      company: "FUTURA LAB TECHNOLOGIES LLP",
+      period: "2023 - 2024",
       achievements: [
         "Built email marketing program from scratch with 35% open rate",
         "Managed brand partnerships generating $500K in value",
         "Produced data reports used for executive decision-making",
       ],
+      src:"https://thefuturalabs.com/wp-content/uploads/2024/02/cropped-favicon-180x180.png",
     },
   ];
 
@@ -60,8 +75,13 @@ const Experience = () => {
             >
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
                 <div className="flex items-start gap-4">
-                  <div className="bg-gradient-primary p-3 rounded-xl group-hover:scale-110 transition-transform">
-                    <Briefcase className="w-6 h-6 text-primary-foreground" />
+                  <div className="bg-gradient-to-br from-background/90 via-background/80 to-primary/10 p-3 rounded-xl group-hover:scale-110 transition-transform">
+                    {/* <Briefcase className="w-6 h-6 text-primary-foreground" /> */}
+                    <img 
+                      src={`${exp.src}`}
+                      alt="logo"
+                      className="w-7 h-7" 
+                      />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground">

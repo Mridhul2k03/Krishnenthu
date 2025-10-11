@@ -73,7 +73,7 @@ const Contact = () => {
                 <Input
                   id="name"
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="Krishnendu"
                   required
                   className="bg-background/50 border-border focus:border-primary"
                 />
@@ -89,7 +89,7 @@ const Contact = () => {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder="Krishnendu@example.com"
                   required
                   className="bg-background/50 border-border focus:border-primary"
                 />
@@ -189,7 +189,7 @@ const Contact = () => {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "8+ years of proven experience",
+                  "Expertise in digital marketing",
                   "Data-driven strategies",
                   "Transparent reporting",
                   "Customized solutions",

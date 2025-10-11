@@ -3,7 +3,7 @@ import { Briefcase, Calendar } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      role: "Digital Marketing Manager",
+      role: "Social Media Manager",
       company: "Exmedia Pvt. Ltd.",
       period: "2025 - Present",
       achievements: [

@@ -1,69 +1,105 @@
 import {
-  Search,
-  Megaphone,
-  PenTool,
-  BarChart3,
-  Palette,
+
   ArrowRight,
 } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Search,
       title: "SEO Optimization",
       description:
         "Optimizes websites to rank higher on Google by improving content, keywords, and backlinks for better visibility and organic traffic.",
       color: "text-primary",
-      bgColor: "bg-primary/10",
+      bgColor: "bg-accent/20",
+      src:"https://cdn-icons-png.flaticon.com/512/5597/5597785.png",
     },
     {
-      icon: Search,
       title: "Google Ads",
       description:
-        "Expert in running search, display, and video ad campaigns that generate high-quality leads and conversions with smart targeting and optimization.",
-      color: "text-primary",
+      "Expert in running search, display, and video ad campaigns that generate high-quality leads and conversions with smart targeting and optimization.",
+      color: "text-accent-foreground",
       bgColor: "bg-primary/10",
+      src:"https://cdn-icons-png.flaticon.com/512/2875/2875421.png",
     },
     {
-      icon: Megaphone,
-      title: "Ad Campaigns",
+      title: "Social Media Marketing",
       description:
-        "Maximize ROI with data-driven paid advertising across Google, Facebook, Instagram, and LinkedIn.",
+      "Skilled in creating and managing engaging campaigns on platforms like Facebook, Instagram, and LinkedIn to boost brand awareness and audience engagement.",
       color: "text-accent-foreground",
       bgColor: "bg-accent/20",
+      src:"https://cdn-icons-png.flaticon.com/512/8407/8407469.png",
     },
     {
-      icon: PenTool,
-      title: "Content Strategy",
+      title: "Content Marketing",
       description:
-        "Engage your audience with compelling content that builds brand authority and drives conversions.",
-      color: "text-primary",
+      "Creates valuable, SEO-friendly content that connects with audiences and builds brand trust while driving traffic and conversions.",
+      color: "text-accent-foreground",
       bgColor: "bg-primary/10",
+      src:"https://cdn-icons-png.flaticon.com/512/9743/9743201.png",
     },
     {
-      icon: BarChart3,
-      title: "Digital Marketing",
+      title: "Web Designing",
       description:
-        "Comprehensive strategies combining SEO, PPC, social media, and email for holistic growth.",
+      "Designs user-friendly, responsive, and visually appealing websites that deliver strong user experience and business results.",
       color: "text-accent-foreground",
       bgColor: "bg-accent/20",
+      src:"https://cdn-icons-png.flaticon.com/512/2779/2779775.png",
     },
     {
-      icon: Palette,
-      title: "Branding",
+      title: "Analytics & Reporting",
       description:
-        "Build memorable brand identities that resonate with your target audience and stand out.",
-      color: "text-primary",
+      "Uses tools like Google Analytics and Meta Insights to track performance, analyze data, and make informed marketing decisions.",
+      color: "text-accent-foreground",
       bgColor: "bg-primary/10",
+      src:"https://cdn-icons-png.flaticon.com/512/13965/13965894.png",
     },
     {
-      icon: BarChart3,
-      title: "Analytics & Insights",
+      title: "Email Marketing",
       description:
-        "Make informed decisions with detailed performance tracking and actionable data insights.",
+      "Builds and manages effective email campaigns that nurture leads and convert subscribers into loyal customers.",
       color: "text-accent-foreground",
       bgColor: "bg-accent/20",
+      src:"https://cdn-icons-png.flaticon.com/512/17600/17600857.png",
+    },
+    {
+      title: "Branding & Strategy",
+      description:
+      "Develops complete digital strategies to define brand voice, set goals, and ensure consistent online presence.",
+      color: "text-accent-foreground",
+      bgColor: "bg-primary/10",
+      src:"https://cdn-icons-png.flaticon.com/512/7832/7832382.png",
+    },
+    {
+      title: "Performance Marketing",
+      description:
+      "Focuses on measurable results by optimizing campaigns for the best ROI through A/B testing and conversion tracking.",
+      color: "text-accent-foreground",
+      bgColor: "bg-accent/20",
+      src:"https://cdn-icons-png.flaticon.com/512/939/939354.png",
+    },
+    {
+      title: "Creative Advertising",
+      description:
+      "Blends design and strategy to create attention-grabbing visuals and ad copies that connect emotionally and perform effectively.",
+      color: "text-accent-foreground",
+      bgColor: "bg-primary/10",
+      src:"https://cdn-icons-png.flaticon.com/512/5471/5471014.png",
+    },
+    {
+      title: "Lead Generation Campaigns",
+      description:
+      "Generate qualified leads for your business using paid and organic marketing funnels.",
+      color: "text-accent-foreground",
+      bgColor: "bg-accent/20",
+      src:"https://cdn-icons-png.flaticon.com/512/16989/16989234.png",
+    },
+    {
+      title: "Website Development & Optimization",
+      description:
+      "Design responsive, fast-loading websites optimized for SEO and conversions.",
+      color: "text-accent-foreground",
+      bgColor: "bg-primary/10",
+      src:"https://cdn-icons-png.flaticon.com/512/7991/7991055.png",
     },
   ];
 
@@ -87,7 +123,6 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => {
-            const Icon = service.icon;
             return (
               <div
                 key={index}
@@ -97,7 +132,11 @@ const Services = () => {
                 <div
                   className={`${service.bgColor} w-14 h-14 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}
                 >
-                  <Icon className={`w-7 h-7 ${service.color}`} />
+                 {/* <Icon className={`w-7 h-7 ${service.color}`} /> */}
+                 <img src={`${service.src}`}
+                      alt=""
+                      className="w-7 h-7"
+                       />
                 </div>
 
                 <h3 className="text-xl font-bold text-foreground mb-3">

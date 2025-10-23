@@ -25,11 +25,11 @@ const About = () => {
           {/* Image */}
           <div className="order-2 lg:order-1 animate-slide-in-left">
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-primary opacity-20 blur-3xl rounded-full" />
+              <div className="absolute -inset-4 bg-gradient-primary opacity-20 blur-3xl rounded-full " />
               <img
-                src="https://img.freepik.com/free-photo/social-media-marketing-concept-marketing-with-applications_23-2150063132.jpg?t=st=1760114327~exp=1760117927~hmac=11d39b9a4a585ed05c3d34b93f0c00f3c93d36004bf298b8d42d7aff056ad2b4&w=1480"
+                src="./2150063146.jpg"
                 alt="Digital Marketer at Work"
-                className="relative rounded-2xl shadow-large w-full h-auto object-cover"
+                className="relative rounded-2xl shadow-sm w-full h-auto object-cover"
               />
             </div>
           </div>

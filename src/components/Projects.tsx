@@ -94,7 +94,7 @@ const Projects = () => {
 
                 {/* Metrics */}
                 <div className="grid grid-cols-3 gap-3 pt-4 border-t border-border">
-                  {project.metrics.map((metric, i) => (
+                  {/* {project.metrics.map((metric, i) => (
                     <div key={i} className="text-center">
                       <div className="flex items-center justify-center gap-1 text-accent-foreground font-bold text-base sm:text-lg mb-1">
                         {metric.value}
@@ -104,7 +104,7 @@ const Projects = () => {
                         {metric.label}
                       </div>
                     </div>
-                  ))}
+                  ))} */}
                 </div>
 
                 {/* View More Button */}

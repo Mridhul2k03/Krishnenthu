@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Linkedin, Twitter, Send, CheckCircle2 } from "lucide-react";
+import { Mail, Linkedin, Send, CheckCircle2, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -25,19 +25,25 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:contact@digitalmarketer.com",
+      href: "mailto:Krishnakrishnendu668@gmail.com",
       color: "hover:text-primary",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/krishnendu-k-v-56842527b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       color: "hover:text-primary",
     },
     {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com",
+      icon: Instagram,
+      label: "Instagram",
+      href: "https://www.instagram.com/_krishn_a___?igsh=MWxjdDl1enZiOHFwMQ%3D%3D&utm_source=qr",
+      color: "hover:text-accent-foreground",
+    },
+    {
+      icon: Facebook,
+      label: "Facebook",
+      href: "https://www.instagram.com/_krishn_a___?igsh=MWxjdDl1enZiOHFwMQ%3D%3D&utm_source=qr",
       color: "hover:text-accent-foreground",
     },
   ];
@@ -154,7 +160,7 @@ const Contact = () => {
               <h3 className="text-xl font-bold text-foreground mb-6">
                 Connect With Me
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-8">
                 {socialLinks.map((social, index) => {
                   const Icon = social.icon;
                   return (
@@ -183,7 +189,7 @@ const Contact = () => {
             </div>
 
             {/* Additional Info */}
-            <div className="glass-card p-6 sm:p-8 rounded-2xl bg-gradient-hero">
+            {/* <div className="glass-card p-6 sm:p-8 rounded-2xl bg-gradient-hero">
               <h3 className="text-xl font-bold text-foreground mb-4">
                 Why Work With Me?
               </h3>
@@ -201,7 +207,7 @@ const Contact = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

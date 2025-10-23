@@ -7,15 +7,15 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CEO, TechStartup",
+      name: "John Johnson",
+      role: "Senior Manager",
       company: "TechStartup Inc.",
       content:
         "Working with this digital marketer transformed our online presence. Our revenue increased by 250% in just 6 months. The strategic approach and attention to data was exactly what we needed.",
       rating: 5,
     },
     {
-      name: "Michael Chen",
+      name: "Radha Krishnan",
       role: "Marketing Director",
       company: "E-commerce Plus",
       content:
@@ -23,7 +23,7 @@ const Testimonials = () => {
       rating: 5,
     },
     {
-      name: "Emily Rodriguez",
+      name: "Answara Rajan",
       role: "Founder",
       company: "GrowthHub",
       content:

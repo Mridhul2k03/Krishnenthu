@@ -5,12 +5,37 @@ import { Button } from "@/components/ui/button";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      // Check if scrolled near the bottom of the page
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100) {
+        setActiveSection("contact");
+        return;
+      }
+
+      // Scroll Spy logic
+      const sections = ["hero", "about", "experience", "projects", "services", "testimonials", "contact"];
+      const scrollPosition = window.scrollY + 120; // offset to align with header height
+
+      for (const sectionId of sections) {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            setActiveSection(sectionId);
+            break;
+          }
+        }
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Trigger once on mount
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -53,7 +78,11 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-primary transition-colors font-medium"
+                className={`transition-colors font-medium ${
+                  activeSection === item.id
+                    ? "text-primary font-semibold"
+                    : "text-foreground/80 hover:text-primary"
+                }`}
               >
                 {item.label}
               </button>
@@ -86,7 +115,11 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-4 py-2 hover:bg-secondary rounded-lg transition-colors font-medium"
+                className={`block w-full text-left px-4 py-2 rounded-lg transition-colors font-medium border-l-4 ${
+                  activeSection === item.id
+                    ? "bg-primary/10 text-primary font-semibold border-primary"
+                    : "text-foreground hover:bg-secondary border-transparent"
+                }`}
               >
                 {item.label}
               </button>

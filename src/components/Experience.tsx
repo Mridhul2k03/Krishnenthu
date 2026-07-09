@@ -11,7 +11,7 @@ const Experience = () => {
         "Implemented data-driven SEO strategy resulting in 250% organic traffic growth",
         "Managed $2M+ annual ad budget across multiple channels",
       ],
-      src:"https://exmedia.in/images/LOGO%20Svg.svg",
+      src:"https://exmedia.in/images/LOGOSvg.svg",
 
     },
     {
@@ -34,7 +34,7 @@ const Experience = () => {
         "Implemented data-driven SEO strategy resulting in 250% organic traffic growth",
         "Managed $2M+ annual ad budget across multiple channels",
       ],
-      src:"https://alraz.in/wp-content/uploads/2023/06/New-Project-10.png",
+      src:"https://dynamic.placementindia.com/recruiter_comp_logo/1237967_20240502095617.jpg",
     },
     {
       role: "Digital Marketing Intern",

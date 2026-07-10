@@ -27,7 +27,7 @@ const About = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-primary opacity-20 blur-3xl rounded-full " />
               <img
-                src="./2150063146.jpg"
+                src="./krishna2.webp"
                 alt="Digital Marketer at Work"
                 className="relative rounded-2xl shadow-sm w-full h-auto object-cover"
               />
